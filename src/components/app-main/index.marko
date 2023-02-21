@@ -1,10 +1,7 @@
-import store from '../store'
-import { increment, decrement } from '../reducers/index.js'
-
 <div>
-  <app-value />
-  <counter
-    on-increment("dispatch", increment)
-    on-decrement("dispatch", decrement)
-  />
+  <app-sections>
+    <@section title="Tabs">
+      <h3>Static tabs</h3>
+    </@section>
+  </app-sections>
 </div>

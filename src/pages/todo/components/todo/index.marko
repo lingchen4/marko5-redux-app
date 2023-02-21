@@ -1,0 +1,23 @@
+import { store } from "../../redux/store.js";
+import todoSelector from "../../redux/selector/todoSelector.js";
+$ {
+  const todos = todoSelector(store.getState());
+}
+
+<input
+  placeholder="add todo"
+  value=state.inputVal
+  onInput("handleInputChange")
+>
+<app-button onClick("addTodo")>Add</app-button>
+<if(todos.length)>
+  <ul>
+    <for|todo| of=todos>
+      <li class=[todo.completed ? "completed" : ""] onClick("deleteTodo", todo.id)>
+        ${todo.text}
+        <span><app-button onClick("toggleTodo", todo.id)>complete</app-button></span>
+      </li>
+    </for>
+  </ul>
+</if>
+<app-button onClick("markAllCompleted")>Mark all completed</app-button>

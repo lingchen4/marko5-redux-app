@@ -1,4 +1,4 @@
-button {
-  margin: 20px;
-  padding: 10px;
+.render-target {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }

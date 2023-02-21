@@ -1,5 +1,5 @@
 {
-  "name": "marko-redux-app",
+  "name": "marko-redux-sample",
   "description": "Sample app that demonstrates the power of building UI components using Marko, Vite, and Express",
   "version": "1.0.0",
   "dependencies": {
@@ -9,7 +9,7 @@
     "express": "^4.18.1",
     "marko": "^5.21.3",
     "raptor-pubsub": "^1.0.5",
-    "redux": "^4.2.1"
+    "reselect": "^4.1.7"
   },
   "devDependencies": {
     "@marko/compiler": "^5.22.1",
